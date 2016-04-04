@@ -8,7 +8,7 @@ read -p 'Proxy - host: ' hostProxy
 read -p 'Proxy - port: ' portProxy
 
 #global proxy settings
-proxy="http://$loginProxy"":""$passwdProxy""@""$host"":""$port""/"
+proxy="http://$loginProxy"":""$passwdProxy""@""$hostProxy"":""$portProxy""/"
 echo "export http_proxy=$proxy" >> /home/pi/.bashrc
 echo "export https_proxy=$proxy" >> /home/pi/.bashrc
 
