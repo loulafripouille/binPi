@@ -21,4 +21,4 @@ echo $aptProxy | sudo tee -a /etc/apt/apt.conf.d/99proxy > /dev/null
 sudo apt-get update && sudo apt-get upgrade
 
 #DONE
-echo "\n--------------------\n done, restart your pi with 'sudo reboot' \n---------------------\n"
+echo -e "\n--------------------\n done, restart your pi with 'sudo reboot' \n---------------------\n"
