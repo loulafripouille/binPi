@@ -18,7 +18,7 @@ aptProxy="Acquire::http::Proxy \"$proxy\";"
 echo $aptProxy | sudo tee -a /etc/apt/apt.conf.d/99proxy > /dev/null
 
 #Update pi
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update && sudo apt-get dist-upgrade
 
 #DONE
 echo -e "\n--------------------\n done, restart your pi with 'sudo reboot' \n---------------------\n"
