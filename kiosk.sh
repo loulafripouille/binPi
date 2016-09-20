@@ -23,7 +23,7 @@ sudo apt-get install epiphany-browser x11-xserver-utils xautomation unclutter
 echo -e "\n-----\n" "Create kiosk script file at /home/pi/fullscreen.sh" "\n-----\n"
 
 #file data
-fullscreenScript="sudo -u pi epiphany-browser -a -i --profile ~/.config $url --display=:0 &\n"'sleep 15s\n''xte "key F11" -x:0'
+fullscreenScript="epiphany-browser -a -i --profile ~/.config $url --display=:0 &\n"'sleep 15s\n''xte "key F11" -x:0'
 
 #Cleanup the file
 if [ -e /home/pi/fullscreen.sh ]
