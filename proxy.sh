@@ -9,9 +9,9 @@ read -p 'Proxy - port: ' portProxy
 
 #global proxy settings
 proxy="http://$loginProxy"":""$passwdProxy""@""$hostProxy"":""$portProxy""/"
-echo "export http_proxy=$proxy" >> /home/pi/.bashrc
-echo "export https_proxy=$proxy" >> /home/pi/.bashrc
-echo "export no_proxy=localhost,127.0.0.1" >> /home/pi/.bashrc
+echo "export http_proxy=$proxy" >> /home/pi/.profile
+echo "export https_proxy=$proxy" >> /home/pi/.profile
+echo "export no_proxy=localhost,127.0.0.1" >> /home/pi/.profile
 
 #apt proxy setting
 sudo touch /etc/apt/apt.conf.d/99proxy
